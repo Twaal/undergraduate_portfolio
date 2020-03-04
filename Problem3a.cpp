@@ -1,3 +1,13 @@
+////////////////////////////////////////
+//////     By Theodor Waalberg    
+////////////////////////////////////////
+/////
+///// The function sorts a vector
+///// of integers nums in-place such that vector[0] ≤ vector[1] ≥ vector[2] ≤ vector[3] ...
+/////
+///////////////////////////////////////
+
+
 #include <vector>
 #include <iostream>
 using namespace std;
@@ -19,11 +29,14 @@ void zigzagSort(vector<int> &nums) {
 			nums[i] = nums[i+1];
 			nums[i+1] = temp;
 		}
-		//nextShouldBeGreaterThanCurrent = !nextShouldBeGreaterThanCurrent;
 	}
-	// your implementation goes here
 
 }
+
+///////////////
+///// main function can be used to test the program 
+///////////////
+
 /*
 int main(void){
 	vector<int> myVec;
