@@ -1,3 +1,8 @@
+///
+///   This function detects a loop in a singly linked list 
+///   If a loop is not detected, it returns NULL
+///   If a loop is detected, it returns the address of the node which causes the loop
+///
 #include "ListNode.h"
 ListNode* findCycleStart(ListNode* head) {
 	ListNode* tort = head;
