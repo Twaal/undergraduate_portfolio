@@ -4,12 +4,13 @@
 #include <vector>
 using namespace std;
 ///
-///   Theodor Waalberg U56124499 
+///   Theodor Waalberg
+///
+///   This program sorts a singly linked list in decreasing oder. It uses insertion sort.
 ///
 
 ListNode* insertionSortList(ListNode* head) {
 	ListNode* current = head;
-	//ListNode* wall = head->next;
 	vector<int> sortedVec;
 	while(current != NULL){
 		sortedVec.push_back(current->val);
@@ -27,7 +28,7 @@ ListNode* insertionSortList(ListNode* head) {
 	}
 
 
-	// your implementation goes here
+	
 
-	return head; // you will need to change this
+	return head; 
 }
